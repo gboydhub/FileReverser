@@ -14,7 +14,6 @@ if(!File.exist?(FileName))                      #If the file doesnt exist
 end
 
 FileData = File.open(FileName, "r:UTF-8", &:read)       #Open the file and read the text data (UTF-8 because I used notepad)
-NewData = FileData.reverse                              #Reverse the text
 
 File.open(FileName, "w:UTF-8"){ |file|                  #Open our file for reading. (I guess this is the format for Ruby? Very different)
     file.write(FileData.reverse)                        #Write out the reversed text to our file handler
