@@ -9,7 +9,7 @@ end
 FileName = InputArguments[0]                    #Set "FileName" to hold the first argument from the list
 puts "Attempting to reverse file: " + FileName  #Let the user know whats going on!
 
-if(!File.exist?(FileName))                  #If the file doesnt exist
+if(!File.exist?(FileName))                      #If the file doesnt exist
     abort("Cannot find file!")                  #ABORT, ABORT! Will be errors if we dont
 end
 
